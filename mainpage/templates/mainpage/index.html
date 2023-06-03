@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyWebsite</title>
+    <meta http-equiv="X-UA-Compatible" content="Ie-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <!--link-css-file-->
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/styles.css' %}">
+    <!--adding-jquery-cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--adding-font-awesome-->
+    <script src="https://kit.fontawesome.com/a9d503d742.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation-->
+    <nav>
+    <!--logo-->
+        <a href="#" class="logo">LOGO</a>
+        <!--bar-icon-->
+        <div class="toggle"></div>
+        <!--menu-->
+        <ul class="menu">
+            <li><a class="home active" href="#home">Home</a></li>
+            <li><a class="about" href="#about">About</a></li>
+            <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+            <li><a class="contact-form contact-btn" href="#contact-form">Contact</a></li>
+        </ul>
+        <!--language-->
+        <a href="#" class="lang">En</a>
+    </nav>
+    <!--home-->
+    <section id="home">
+        <!--name-->
+        <div class="name">
+            <p>Hello</p>
+            <h1>I'm <font color="17d1ac">Artem</font> Zaluzhnyi</h1>
+            <!--details-->
+            <p class="details">Many words about me. Many words about me. Many words about me. Many words about me. Many
+                words about me.</p>
+            <!--cv-btn-->
+            <a href="#" class="cv-btn">Download Cv</a>
+        </div>
+    </section>
+    <!--about-->
+    <section id="about">
+        <!--text-->
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h2>Junior Python Developer</h2>
+            <p>yo yo yo yo yo</p>
+            <button>More Details</button>
+        </div>
+        <!--about-model-img-->
+        <div class="about-model">
+            <h1>PLACEHOLDER</h1>
+            <!--<img src="images/about-model.png" alt="model"/>-->
+        </div>
+    </section>
+    <!--portfolio-->
+    <section id="portfolio">
+        <!--heading-->
+        <h1 class="p-heading">Portfolio</h1>
+        <!--portfolio-box-container-->
+        <div class="p-b-container">
+            <!--box-1-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project1</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w1.png" alt="portfolio"></div>
+            </div>
+            <!--box-2-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project2</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w2.png" alt="portfolio"></div>
+            </div>
+            <!--box-3-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project3</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w3.png" alt="portfolio"></div>
+            </div>
+            <!--box-4-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project4</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w4.png" alt="portfolio"></div>
+            </div>
+            <!--box-5-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project5</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w5.png" alt="portfolio"></div>
+            </div>
+            <!--box-6-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Project6</h1>
+                    <p>Project</p>
+                </div>
+                <!--img-->
+                <div><img src="images/w6.png" alt="portfolio"></div>
+            </div>
+        </div>
+    </section>
+    <!--contact-btn-->
+    <section id="contact-btn">
+        <!--heading-->
+        <h1>Need further information?</h1>
+        <!--btn-->
+        <a href="#contact-form">Contract Me</a>
+    </section>
+    <!--contact-form-->
+    <section id="contact-form">
+        <form>
+            <!--left-->
+            <div class="contact-left">
+                <!--heading-->
+                <h1 class="c-l-heading">Contact Me</h1>
+                <div class="f-name">
+                    <!--form-name-->
+                    <font>Name</font>
+                    <!--input-->
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <!--form-email-->
+                <div class="f-email">
+                    <!--name-->
+                    <font>Email</font>
+                    <!--input-->
+                    <input type="email" placeholder="Example@hmail.com">
+                </div>
+            </div>
+            <!--right-->
+            <div class="contact-right">
+                <!--message-->
+                <div class="message">
+                    <font>Message</font>
+                    <textarea name="message" row="5" cols="20" placeholder="Write Message"></textarea>
+                </div>
+                <!--submit-->
+                <button>submit</button>
+            </div>
+        </form>
+    </section>
+    <!--link-js-file-->
+    <script src="{% static 'mainpage/js/script.js' %}"></script>
+</body>
+</html>
