@@ -188,7 +188,7 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -208,7 +208,8 @@ nav {
 }
 .text-overlay p{
     font-size: 1.2rem;
-    margin: 0px;
+    margin: 10px 0px;
+    padding: 0px 20px;
 }
 .p-box:hover .text-overlay{
     display: flex;
@@ -216,7 +217,7 @@ nav {
 .p-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 #contact-btn h1{
     font-size: 2rem;
