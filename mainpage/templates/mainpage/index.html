@@ -41,7 +41,7 @@
             <p class="details">Many words about me. Many words about me. Many words about me. Many words about me. Many
                 words about me.</p>
             <!--cv-btn-->
-            <a href="#" class="cv-btn">Download Cv</a>
+            <a href="{% static 'mainpage/pdf/cv.pdf' %}" download class="cv-btn">Download Cv</a>
         </div>
     </section>
     <!--about-->
@@ -136,7 +136,8 @@
     </section>
     <!--contact-form-->
     <section id="contact-form">
-        <form>
+        <form method="post" action=".">
+            {% csrf_token %}
             <!--left-->
             <div class="contact-left">
                 <!--heading-->
@@ -145,6 +146,7 @@
                     <!--form-name-->
                     <font>Name</font>
                     <!--input-->
+
                     <input type="text" placeholder="Full Name">
                 </div>
                 <!--form-email-->
