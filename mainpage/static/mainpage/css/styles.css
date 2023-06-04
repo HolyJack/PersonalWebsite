@@ -12,19 +12,12 @@ ul {
 a {
     text-decoration: none;
 }
+.skill,
+.project {
+    color: #17d1ac;
+}
 .toggle {
     display: none;
-}
-#home {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #edf1fd;
-    position: relative;
-    /*background-image: url("../images/bg.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover; */
-    /*background-position: right bottom; */
 }
 nav {
     display: flex;
@@ -68,39 +61,67 @@ nav {
     font-weight: 700;
     transition: all ease 0.4s;
 }
-.name {
-    font-family: calibri;
-    width: 500px;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translate(-20%, -50%);
+#home {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
 }
-.name > p:first-child,
-.name .details {
-    color: #6c707c;
-    font-size: 16px;
 
+#home .name {
+    font-family: Calibri;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.name h1{
-    font-family: Poppins;
-    font-size: 40px;
-    margin: 0px;
+
+#home .name .hello {
+    color: #6c707c;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#home .name h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 45px;
+    margin: 0;
     letter-spacing: 3px;
     color: #292929;
 }
-.cv-btn{
+
+#home .name .details {
+    color: #6c707c;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#home .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#home .cv-btn {
     width: 200px;
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #292929;
-    color: #FFFFFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-.cv-btn:hover {
+
+#home .cv-btn:hover {
     background-color: #131313;
-    transition: all ease 0.5s;
 }
 #about {
     width: 100%;
@@ -133,16 +154,23 @@ nav {
     font-size: 1.2rem;
     color: rgba(251,251,251,0.90)
 }
-.about-text button {
+.about-text a {
+    display: inline-block;
     width: 180px;
     height: 40px;
     border-radius: 20px;
     border: none;
     outline: none;
     background-color: #17d1ac;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
-.about-text button:hover {
+  
+.about-text a:hover {
     background-color: #FFFFFF;
+    color: #17d1ac;
     transition: all ease 0.3s;
 }
 #portfolio{

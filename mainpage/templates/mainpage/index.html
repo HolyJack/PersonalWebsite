@@ -35,13 +35,14 @@
     <section id="home">
         <!--name-->
         <div class="name">
-            <p>Hello</p>
+            <p class="hello">Hello</p>
             <h1>I'm <font color="17d1ac">Artem</font> Zaluzhnyi</h1>
             <!--details-->
-            <p class="details">Many words about me. Many words about me. Many words about me. Many words about me. Many
-                words about me.</p>
+            <p class="details">Welcome to my website! I'm a Junior Python Developer with a passion for building web applications and solving complex problems using Python.</p>
             <!--cv-btn-->
-            <a href="{% static 'mainpage/pdf/cv.pdf' %}" download class="cv-btn">Download Cv</a>
+            <div class="button-wrapper">
+                <a href="{% static 'mainpage/pdf/cv.pdf' %}" download class="cv-btn">Download Cv</a>
+            </div>
         </div>
     </section>
     <!--about-->
@@ -50,8 +51,30 @@
         <div class="about-text">
             <h1>About Me</h1>
             <h2>Junior Python Developer</h2>
-            <p>yo yo yo yo yo</p>
-            <button>More Details</button>
+            <p>I'm a skilled developer proficient in 
+                <span class="skill">Python</span>, 
+                <span class="skill">C/C++</span>, 
+                <span class="skill">Linux</span>, 
+                <span class="skill">Django</span>, 
+                <span class="skill">Git</span>, 
+                and other technologies. 
+                I have gained valuable experience through my studies at 21 School (42 Ecole) and JetBrains Academy.</p>
+            
+            <p>To showcase my abilities and demonstrate my projects, I have created a personal website using 
+                <span class="skill">Python</span>, 
+                <span class="skill">Django</span>, 
+                <span class="skill">HTML</span>, 
+                <span class="skill">CSS</span>, 
+                and <span class="skill">JavaScript</span>. 
+                This website serves as a comprehensive portfolio, giving an overview of my work and showcasing my skills.</p>
+            
+            <p>Notable projects in my portfolio include developing an e-commerce application called 
+                <span class="project">BikeShop</span>, 
+                building a news publishing platform called 
+                <span class="project">Hyper News</span>, 
+                and creating a small-scale Unix shell environment known as 
+                <span class="project">Minishell</span>.</p>
+            <a href='#portfolio'>More Details</a>
         </div>
         <!--about-model-img-->
         <div class="about-model">
