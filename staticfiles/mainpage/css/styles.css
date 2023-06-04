@@ -408,6 +408,10 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.contact-right button:hover {
+    background-color: #f4f7ff !important;
+    transition: all ease 0.4s;
+}
 @media(max-width:1190px) {
     #home {
         background-size: 1150px;

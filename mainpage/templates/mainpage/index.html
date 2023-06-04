@@ -144,28 +144,28 @@
                 <h1 class="c-l-heading">Contact Me</h1>
                 <div class="f-name">
                     <!--form-name-->
-                    <font>Name</font>
+                    <font>{{ form.full_name.label }}</font>
                     <!--input-->
 
-                    <input type="text" placeholder="Full Name">
+                    {{ form.full_name }}
                 </div>
                 <!--form-email-->
                 <div class="f-email">
-                    <!--name-->
-                    <font>Email</font>
+                    <!--form-name-->
+                    <font>{{ form.email.label }}</font>
                     <!--input-->
-                    <input type="email" placeholder="Example@hmail.com">
+                    {{ form.email }}
                 </div>
             </div>
             <!--right-->
             <div class="contact-right">
                 <!--message-->
                 <div class="message">
-                    <font>Message</font>
-                    <textarea name="message" row="5" cols="20" placeholder="Write Message"></textarea>
+                    <font>{{ form.message.label }}</font>
+                    {{ form.message }}
                 </div>
                 <!--submit-->
-                <button>submit</button>
+                <button type="submit">submit</button>
             </div>
         </form>
     </section>
