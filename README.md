@@ -4,5 +4,5 @@ This project is my Personal Website. I have created it using Python, Django, HTM
 ## Dependencies 
 Python 3.8, Django 4.2.1, python-decouple 3.8
 ## Usage
-python manage.py collectstatic
+python manage.py collectstatic /n
 python manage.py runserver
