@@ -37,6 +37,9 @@ nav {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
     z-index: 1;
 }
+
+nav::before {content: " "; width: 27px; height: 1px;}
+
 .menu {
     display: flex;
 }
@@ -54,6 +57,7 @@ nav {
     color: #292929;
     font-family: Poppins;
 }
+
 .menu li a:hover,
 .menu li a.active {
     background-color: #292929 !important;
@@ -79,27 +83,43 @@ nav {
     text-align: center;
 }
 
-#home .name .hello {
+#home .social-media {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 5%);
+}
+
+#home .social-media a{
+    color: #292929;
+    font-size: 2rem;
+}
+
+#home .name .hello,
+#home .name .details {
     color: #6c707c;
-    font-size: 30px;
+    font-size: 25px;
+    margin: 5px
+}
+
+#home .name .hello {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+#home .name .details {
+    margin-bottom: 20px;
+}
+
 #home .name h1 {
     font-family: Poppins, sans-serif;
     font-size: 45px;
-    margin: 0;
+    margin: 5px;
     letter-spacing: 3px;
     color: #292929;
 }
 
-#home .name .details {
-    color: #6c707c;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 #home .button-wrapper {
     display: flex;
     justify-content: center;
@@ -120,7 +140,7 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-#home .cv-btn:hover {
+#home .cv-btn:hover{
     background-color: #131313;
 }
 #about {
@@ -473,7 +493,7 @@ nav {
     .toggle {
         display: block;
     }
-    .toggle:before {
+    .toggle::before {
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 0px;
